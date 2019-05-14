@@ -15,7 +15,7 @@ namespace Api
             {
                 ApplicationDbContext context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
-                var shapeDbEntry = context.Authors.Add(
+                var shapeDbEntry = context.Shapes.Add(
                   new Shape
                   {
                       Name = "Rectangle Boxes",
@@ -24,7 +24,7 @@ namespace Api
 
                 context.SaveChanges();
 
-                context.Books.AddRange(
+                context.Rectangles.AddRange(
                   new Rectangle
                   {
                       Name = "Rubix",

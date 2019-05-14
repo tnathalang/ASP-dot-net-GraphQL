@@ -10,7 +10,7 @@ namespace Api.Database
               : base(options)
         { }
 
-        public DbSet<Rectangle> Books { get; set; }
-        public DbSet<Shape> Authors { get; set; }
+        public DbSet<Rectangle> Rectangles { get; set; }
+        public DbSet<Shape> Shapes { get; set; }
     }
 }
