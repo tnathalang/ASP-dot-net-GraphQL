@@ -43,6 +43,7 @@ namespace Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            //endpoint for testing graphql
             app.UseGraphiQl("/graphql");
             app.UseMvc();
         }
